@@ -1,19 +1,19 @@
 /*Titulos*/
-h1{
+h1 {
     font-family: 'Inknut Antiqua', serif;
     line-height: 130%;
 }
 
-.body-num{
+.body-num {
     background: url("images/fondo_numeros.jpg");
     background-size: cover;
 }
 
-.centrado{
+.centrado {
     margin: auto;
 }
 
-.div-conver{
+.div-conver {
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px;
@@ -24,17 +24,18 @@ h1{
     margin-top: 50px;
 }
 
-.color-div{
+.color-div {
     background: #feab5a;
     max-width: 500px;
+    display: none;
 }
 
-.operacionesMat input{
+.operacionesMat input {
     max-width: 40px;
 }
 
 /*Formulario*/
-input{
+input {
     border-radius: 2px;
     box-shadow: 5px 5px 10px #7a8aac;
 }
@@ -43,8 +44,8 @@ input:focus {
     border-color: #19ac67;
 }
 
-.ejer{
-    border:1px solid #000000;
+.ejer {
+    border: 1px solid #000000;
     background: rgba(240, 255, 105, 0.47);
 }
 

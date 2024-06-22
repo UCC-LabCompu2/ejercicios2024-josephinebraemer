@@ -2,22 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Canvas con Circulo y Cuadrado</title>
+    <title>Canvas Mini-Paint
+    </title>
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
     <link href="miEstilo.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="misFunciones.js"></script>
 </head>
 
-<body>
-<h1>Canvas 2</h1>
-<p>Ejercicio: Dibujar un cuadriculado en un canvas. La función debe llamarse al presionar el boton.</p>
-<button type="button" onclick="dibujarCuadriculado()">
-    Dibujar Cuadriculado
-</button>
-<br>
-<canvas id="myCanvas" class="ejer" width="1000" height="800">
+<body onload="cargarEventListener()">
+<canvas id="myCanvas" class="ejer" width="800px" height="600px">
     Tu navegador no soporta el tag de HTML5 canvas.
 </canvas>
-
+<button type="button" onclick="BorrarCanvas()">Borrar Lienzo</button>
 </body>
 </html>
