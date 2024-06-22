@@ -11,33 +11,66 @@
     </style>
 </head>
 <body>
+
 <!--Cree un Formulario con los campos que se proponen a continuacion-->
 <!--Agregue el atributo legend-->
 
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
+
+
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
-
+<form>
+    <p>
+        <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" size="60" maxlength="40">
+    </p>
+    <p>
+        <label for="apellido">Apellido: </label><input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido"size="60" maxlength="40">
+    </p>
+    <p>
+        Sexo:
+        <label for="masculino">Masculino </label><input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="femenino">Femenino</label><input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="noRev">Prefiero no revelarlo</label><input type="radio" name="genero" id="noRev" value="noRev">
+    </p>
+    <p>
+        <label for="edad">Edad: </label><input type="number" name="edad" id="edad" min="0" max="100" maxlength="3"size="3" maxlength="4">
+    </p>
+    <p>
+        <label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Ingrese su email"size="60" maxlength="40">
+    </p>
+    <p>
+        <label for="usuario">Usuario: </label><input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario"size="60" maxlength="40">
+    </p>
+    <p>
+        <label for="password">Password: </label><input type="password" name="password" id="password" placeholder="Ingrese su Password"size="60" maxlength="40">
+    </p>
+    <p>
+        <label for="confirmarPassword">Confirmar Password: </label><input type="password" name="confirmarPassword" id="confirmarPassword" placeholder="Ingrese su Password" size="60" maxlength="40">
+    </p>
+    <p>
+        <label for="tipoServicio">Tipo de servicio: </label><select name="tipoServicio" id="tipoServicio">
+        <option value="free">Free</option>
+        <option value="standard">Standard</option>
+        <option value="premiun">Premium</option>
+    </select>
+    </p>
+    <p>
+        Tema:
+        <label for="politica">Política</label><input type="checkbox" name="politica" id="politica">
+        <label for="negocios">Negocios</label><input type="checkbox" name="negocios" id="negocios">
+        <label for="tecnologia">Tecnología</label><input type="checkbox" name="tecnologia" id="tecnologia">
+        <label for="salud">Salud</label><input type="checkbox" name="salud" id="salud">
+    </p>
+    <p>
+        <label for="comentario">Agregue un comentario:</label><textarea name="comentario" id="comentario" rows="8"></textarea>
+    </p>
+    <p>
+        <button type="button">
+            Boton de Enviar
+        </button>
+    </p>
+</form>
 </body>
 </html>
